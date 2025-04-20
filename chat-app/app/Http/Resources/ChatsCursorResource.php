@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Helpers\Resourse;
+namespace App\Http\Resources;
 
 use App\Helpers\Dto\Request\CursorDto;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ChatsCursorResource extends JsonResource
+final class ChatsCursorResource extends JsonResource
 {
     public function toArray(Request $request): array
     {
@@ -27,7 +27,7 @@ class ChatsCursorResource extends JsonResource
             'chats' => $chats,
             'nextPage' => [
                 'key' => $key,
-                'date' => $date
+                'date' => $date?->format('Y-m-d H:i:s')
             ]
         ];
     }

@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use App\Helpers\Dto\Request\CursorDto;
 use Illuminate\Foundation\Http\FormRequest;
 
-class CursorRequest extends FormRequest
+final class CursorRequest extends FormRequest
 {
     public function rules(): array
     {

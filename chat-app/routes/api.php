@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ChatController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/chats/list', [Controller::class, 'listByTime']);
+Route::get('/chats/list', [ChatController::class, 'listByTime']);

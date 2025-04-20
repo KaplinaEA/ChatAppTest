@@ -2,7 +2,7 @@
 
 namespace App\Helpers\Dto\Request;
 
-readonly class CursorDto
+final readonly class CursorDto
 {
     public const int LIMIT = 20;
 

@@ -6,7 +6,7 @@ use App\Http\Requests\CursorRequest;
 use App\Services\ChatService;
 use Illuminate\Http\JsonResponse;
 
-class Controller
+final class ChatController
 {
     public function listByTime(CursorRequest $request, ChatService $chatService): JsonResponse
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Helpers\Resourse;
+namespace App\Http\Resources;
 
 use App\Models\Chat;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class ChatCollectionResource extends ResourceCollection
+final class ChatCollectionResource extends ResourceCollection
 {
     public function toArray(Request $request): array
     {

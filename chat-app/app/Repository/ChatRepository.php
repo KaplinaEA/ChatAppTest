@@ -6,7 +6,7 @@ use App\Helpers\Dto\Request\CursorDto;
 use App\Models\Chat;
 use Illuminate\Database\Eloquent\Builder;
 
-class ChatRepository extends AbstractRepository
+final class ChatRepository extends AbstractRepository
 {
     public function __construct()
     {
@@ -18,7 +18,7 @@ class ChatRepository extends AbstractRepository
         $query = $this->newQuery();
         $query->select(['id', 'name', 'created_at', 'updated_at']);
         if (!is_null($cursorDto->date) && !is_null($cursorDto->key)) {
-            $query->whereDate('updated_at', '<', $cursorDto->date)
+            $query->where('updated_at', '<', $cursorDto->date)
                 ->orWhere(function ($query) use ($cursorDto) {
                     $query->where('updated_at', '=', $cursorDto->date)
                         ->where('id', '<=', $cursorDto->key);
