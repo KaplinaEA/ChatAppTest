@@ -4,7 +4,7 @@
 
 ## Для добавления моковых данных
 
-``make add:data``
+``make add-data``
 
 ## Получение чатов
 
@@ -17,3 +17,7 @@ Host: localhost:8080
 GET /api/chats/list?date=2004-02-01%2015:19:21&key=uuid1 HTTP/1.1
 Host: localhost:8080
 ````
+
+## Запуск тестов
+
+`` make test``

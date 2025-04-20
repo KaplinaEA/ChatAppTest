@@ -3,8 +3,8 @@
 namespace App\Services;
 
 use App\Helpers\Dto\Request\CursorDto;
-use App\Http\Resources\ChatsCursorResource;
 use App\Repository\ChatRepository;
+use Illuminate\Support\Collection;
 
 final readonly class ChatService
 {
@@ -12,9 +12,8 @@ final readonly class ChatService
     {
     }
 
-    public function getlist(CursorDto $cursorDto): ChatsCursorResource
+    public function getlist(CursorDto $cursorDto): Collection
     {
-        $chats = $this->chatRepository->list($cursorDto)->get();
-        return ChatsCursorResource::make($chats);
+        return $this->chatRepository->list($cursorDto)->get();
     }
 }

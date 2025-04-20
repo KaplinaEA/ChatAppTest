@@ -6,7 +6,7 @@ use App\Helpers\Dto\Request\CursorDto;
 use App\Models\Chat;
 use Illuminate\Database\Eloquent\Builder;
 
-final class ChatRepository extends AbstractRepository
+class ChatRepository extends AbstractRepository
 {
     public function __construct()
     {
