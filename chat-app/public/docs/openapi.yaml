@@ -1,0 +1,369 @@
+openapi: 3.0.3
+info:
+  title: 'Laravel API Documentation'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8080'
+tags:
+  -
+    name: Endpoints
+    description: ''
+paths:
+  /api/chats/list:
+    get:
+      summary: ''
+      operationId: getApiChatsList
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    chats:
+                      -
+                        id: 019655ac-6ffb-708b-bc6d-710beba9e9ca
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:23'
+                        lastMessage:
+                          id: 019655af-7030-72b9-bd1d-fb07827b386a
+                          preview: 'Let me see: four times five is twelve, and four times seven is--oh dear! I wish you would seem to en'
+                      -
+                        id: 019655ac-6ff1-7386-b062-541904811f3a
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:21'
+                        lastMessage:
+                          id: 019655af-6b90-71a9-96a3-0e4421cac25b
+                          preview: "Knave 'Turn them over!' The Knave did so, and were quite silent, and looked at Alice. 'It must be Ma"
+                      -
+                        id: 019655ac-6fe5-7173-a5ce-e86ec8699561
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:21'
+                        lastMessage:
+                          id: 019655af-69bb-715c-94a4-800ddf184506
+                          preview: "Alice: 'allow me to sell you a present of everything I've said as yet.' 'A cheap sort of use in wait"
+                      -
+                        id: 019655ac-6fdc-739d-8d28-1b884c1aa552
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:18'
+                        lastMessage:
+                          id: 019655af-5e6e-703d-ac86-db065093733d
+                          preview: "Cheshire cat,' said the Duchess, 'as pigs have to go on with the tea,' the Hatter was the Hatter. Th"
+                      -
+                        id: 019655ac-6fd2-732f-b796-b548851eebb7
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:17'
+                        lastMessage:
+                          id: 019655af-5913-7271-b82a-a5faf19d2fab
+                          preview: 'THAT''S the great hall, with the end of trials, "There was some attempts at applause, which was full '
+                      -
+                        id: 019655ac-6fc9-721b-86d3-4e9e8842f58b
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:16'
+                        lastMessage:
+                          id: 019655af-576c-70c2-a462-d75d790e7fdb
+                          preview: "Caterpillar seemed to Alice again. 'No, I give it up,' Alice replied: 'what's the answer?' 'I haven'"
+                      -
+                        id: 019655ac-6fc0-70af-b371-54a58035bc1a
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:15'
+                        lastMessage:
+                          id: 019655af-5212-7211-9d90-85c8ca05217e
+                          preview: 'I get" is the driest thing I ever saw one that size? Why, it fills the whole she thought at first wa'
+                      -
+                        id: 019655ac-6fb6-70e6-b20e-ae84f17412b0
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:12'
+                        lastMessage:
+                          id: 019655af-4873-70bc-9b4d-0681a1661513
+                          preview: "I only wish it was,' the March Hare. 'Yes, please do!' pleaded Alice. 'And where HAVE my shoulders g"
+                      -
+                        id: 019655ac-6fab-7215-9d6b-b7b2a088cff5
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:09'
+                        lastMessage:
+                          id: 019655af-3b2f-7049-aaef-2c5e17cc07b4
+                          preview: "Why, I do it again and again.' 'You are all dry, he is gay as a lark, And will talk in contemptuous "
+                      -
+                        id: 019655ac-6f95-7321-bd9e-755cf197c14e
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:08'
+                        lastMessage:
+                          id: 019655af-3582-7233-b9b7-4b4472dbb9d9
+                          preview: 'Alice had never left off when they met in the distance, and she jumped up in her hands, wondering if'
+                      -
+                        id: 019655ac-6f8b-73d0-b198-334a96d91104
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:11:02'
+                        lastMessage:
+                          id: 019655af-1f7b-7220-a6d7-cb687af4b9e9
+                          preview: "When the pie was all about, and crept a little scream of laughter. 'Oh, hush!' the Rabbit came near "
+                      -
+                        id: 019655ac-6f81-7142-92e0-f6edaa01f7f6
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:56'
+                        lastMessage:
+                          id: 019655af-0965-70ea-977f-c45f9134fd0e
+                          preview: "Dormouse, who was talking. Alice could hear the words:-- 'I speak severely to my boy, I beat him whe"
+                      -
+                        id: 019655ac-6f76-72a3-b278-e59949573358
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:55'
+                        lastMessage:
+                          id: 019655af-0553-738c-8cff-90393ee4a6de
+                          preview: "I then? Tell me that first, and then another confusion of voices--'Hold up his head--Brandy now--Don"
+                      -
+                        id: 019655ac-6f67-72b0-bfff-f3e29f286bb6
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:54'
+                        lastMessage:
+                          id: 019655af-01f8-712b-8ac2-ba1b4ec45672
+                          preview: "The Gryphon lifted up both its paws in surprise. 'What! Never heard of one,' said Alice, in a moment"
+                      -
+                        id: 019655ac-6f4a-72c8-8dad-62c7a0c5c31f
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:51'
+                        lastMessage:
+                          id: 019655ae-f35e-719d-831c-800f37367ad9
+                          preview: "NOT be an advantage,' said Alice, very loudly and decidedly, and there was the BEST butter, you know"
+                      -
+                        id: 019655ac-6f40-731b-92f5-77ade264d2f9
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:49'
+                        lastMessage:
+                          id: 019655ae-ebcd-71c4-bc8f-c76a8addef24
+                          preview: 'For he can thoroughly enjoy The pepper when he sneezes; For he can thoroughly enjoy The pepper when '
+                      -
+                        id: 019655ac-6f37-70bd-a548-70322c065998
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:47'
+                        lastMessage:
+                          id: 019655ae-e53d-73c3-8ef5-f64e73d2e3f0
+                          preview: "Just at this corner--No, tie 'em together first--they don't reach half high enough yet--Oh! they'll "
+                      -
+                        id: 019655ac-6f2d-73b1-b30f-954118ce6f08
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:44'
+                        lastMessage:
+                          id: 019655ae-dafd-70a3-b985-7f48ee6650eb
+                          preview: "Queen. 'Their heads are gone, if it likes.' 'I'd rather not,' the Cat said, waving its right ear and"
+                      -
+                        id: 019655ac-6f24-7213-9e1f-8c74d34970b7
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:41'
+                        lastMessage:
+                          id: 019655ae-cf15-7207-b501-3dd04980ab5d
+                          preview: 'Mock Turtle, who looked at the window, she suddenly spread out her hand in hand with Dinah, and sayi'
+                      -
+                        id: 019655ac-6f16-72e9-a66c-b9a8a8516587
+                        createdAt: '2025-04-21 00:08:06'
+                        updatedAt: '2025-04-21 00:10:41'
+                        lastMessage:
+                          id: 019655ae-ccee-7177-a016-a1d3ac1ed6b5
+                          preview: "The Duchess took her choice, and was going to remark myself.' 'Have you guessed the riddle yet?' the"
+                    nextPage:
+                      key: 019655ac-6f0d-7222-97fd-259655367c38
+                      date: '2025-04-21 00:10:40'
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      chats:
+                        type: array
+                        example:
+                          -
+                            id: 019655ac-6ffb-708b-bc6d-710beba9e9ca
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:23'
+                            lastMessage:
+                              id: 019655af-7030-72b9-bd1d-fb07827b386a
+                              preview: 'Let me see: four times five is twelve, and four times seven is--oh dear! I wish you would seem to en'
+                          -
+                            id: 019655ac-6ff1-7386-b062-541904811f3a
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:21'
+                            lastMessage:
+                              id: 019655af-6b90-71a9-96a3-0e4421cac25b
+                              preview: "Knave 'Turn them over!' The Knave did so, and were quite silent, and looked at Alice. 'It must be Ma"
+                          -
+                            id: 019655ac-6fe5-7173-a5ce-e86ec8699561
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:21'
+                            lastMessage:
+                              id: 019655af-69bb-715c-94a4-800ddf184506
+                              preview: "Alice: 'allow me to sell you a present of everything I've said as yet.' 'A cheap sort of use in wait"
+                          -
+                            id: 019655ac-6fdc-739d-8d28-1b884c1aa552
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:18'
+                            lastMessage:
+                              id: 019655af-5e6e-703d-ac86-db065093733d
+                              preview: "Cheshire cat,' said the Duchess, 'as pigs have to go on with the tea,' the Hatter was the Hatter. Th"
+                          -
+                            id: 019655ac-6fd2-732f-b796-b548851eebb7
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:17'
+                            lastMessage:
+                              id: 019655af-5913-7271-b82a-a5faf19d2fab
+                              preview: 'THAT''S the great hall, with the end of trials, "There was some attempts at applause, which was full '
+                          -
+                            id: 019655ac-6fc9-721b-86d3-4e9e8842f58b
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:16'
+                            lastMessage:
+                              id: 019655af-576c-70c2-a462-d75d790e7fdb
+                              preview: "Caterpillar seemed to Alice again. 'No, I give it up,' Alice replied: 'what's the answer?' 'I haven'"
+                          -
+                            id: 019655ac-6fc0-70af-b371-54a58035bc1a
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:15'
+                            lastMessage:
+                              id: 019655af-5212-7211-9d90-85c8ca05217e
+                              preview: 'I get" is the driest thing I ever saw one that size? Why, it fills the whole she thought at first wa'
+                          -
+                            id: 019655ac-6fb6-70e6-b20e-ae84f17412b0
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:12'
+                            lastMessage:
+                              id: 019655af-4873-70bc-9b4d-0681a1661513
+                              preview: "I only wish it was,' the March Hare. 'Yes, please do!' pleaded Alice. 'And where HAVE my shoulders g"
+                          -
+                            id: 019655ac-6fab-7215-9d6b-b7b2a088cff5
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:09'
+                            lastMessage:
+                              id: 019655af-3b2f-7049-aaef-2c5e17cc07b4
+                              preview: "Why, I do it again and again.' 'You are all dry, he is gay as a lark, And will talk in contemptuous "
+                          -
+                            id: 019655ac-6f95-7321-bd9e-755cf197c14e
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:08'
+                            lastMessage:
+                              id: 019655af-3582-7233-b9b7-4b4472dbb9d9
+                              preview: 'Alice had never left off when they met in the distance, and she jumped up in her hands, wondering if'
+                          -
+                            id: 019655ac-6f8b-73d0-b198-334a96d91104
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:11:02'
+                            lastMessage:
+                              id: 019655af-1f7b-7220-a6d7-cb687af4b9e9
+                              preview: "When the pie was all about, and crept a little scream of laughter. 'Oh, hush!' the Rabbit came near "
+                          -
+                            id: 019655ac-6f81-7142-92e0-f6edaa01f7f6
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:56'
+                            lastMessage:
+                              id: 019655af-0965-70ea-977f-c45f9134fd0e
+                              preview: "Dormouse, who was talking. Alice could hear the words:-- 'I speak severely to my boy, I beat him whe"
+                          -
+                            id: 019655ac-6f76-72a3-b278-e59949573358
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:55'
+                            lastMessage:
+                              id: 019655af-0553-738c-8cff-90393ee4a6de
+                              preview: "I then? Tell me that first, and then another confusion of voices--'Hold up his head--Brandy now--Don"
+                          -
+                            id: 019655ac-6f67-72b0-bfff-f3e29f286bb6
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:54'
+                            lastMessage:
+                              id: 019655af-01f8-712b-8ac2-ba1b4ec45672
+                              preview: "The Gryphon lifted up both its paws in surprise. 'What! Never heard of one,' said Alice, in a moment"
+                          -
+                            id: 019655ac-6f4a-72c8-8dad-62c7a0c5c31f
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:51'
+                            lastMessage:
+                              id: 019655ae-f35e-719d-831c-800f37367ad9
+                              preview: "NOT be an advantage,' said Alice, very loudly and decidedly, and there was the BEST butter, you know"
+                          -
+                            id: 019655ac-6f40-731b-92f5-77ade264d2f9
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:49'
+                            lastMessage:
+                              id: 019655ae-ebcd-71c4-bc8f-c76a8addef24
+                              preview: 'For he can thoroughly enjoy The pepper when he sneezes; For he can thoroughly enjoy The pepper when '
+                          -
+                            id: 019655ac-6f37-70bd-a548-70322c065998
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:47'
+                            lastMessage:
+                              id: 019655ae-e53d-73c3-8ef5-f64e73d2e3f0
+                              preview: "Just at this corner--No, tie 'em together first--they don't reach half high enough yet--Oh! they'll "
+                          -
+                            id: 019655ac-6f2d-73b1-b30f-954118ce6f08
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:44'
+                            lastMessage:
+                              id: 019655ae-dafd-70a3-b985-7f48ee6650eb
+                              preview: "Queen. 'Their heads are gone, if it likes.' 'I'd rather not,' the Cat said, waving its right ear and"
+                          -
+                            id: 019655ac-6f24-7213-9e1f-8c74d34970b7
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:41'
+                            lastMessage:
+                              id: 019655ae-cf15-7207-b501-3dd04980ab5d
+                              preview: 'Mock Turtle, who looked at the window, she suddenly spread out her hand in hand with Dinah, and sayi'
+                          -
+                            id: 019655ac-6f16-72e9-a66c-b9a8a8516587
+                            createdAt: '2025-04-21 00:08:06'
+                            updatedAt: '2025-04-21 00:10:41'
+                            lastMessage:
+                              id: 019655ae-ccee-7177-a016-a1d3ac1ed6b5
+                              preview: "The Duchess took her choice, and was going to remark myself.' 'Have you guessed the riddle yet?' the"
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: 019655ac-6ffb-708b-bc6d-710beba9e9ca
+                            createdAt:
+                              type: string
+                              example: '2025-04-21 00:08:06'
+                            updatedAt:
+                              type: string
+                              example: '2025-04-21 00:11:23'
+                            lastMessage:
+                              type: object
+                              properties:
+                                id:
+                                  type: string
+                                  example: 019655af-7030-72b9-bd1d-fb07827b386a
+                                preview:
+                                  type: string
+                                  example: 'Let me see: four times five is twelve, and four times seven is--oh dear! I wish you would seem to en'
+                      nextPage:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            example: 019655ac-6f0d-7222-97fd-259655367c38
+                          date:
+                            type: string
+                            example: '2025-04-21 00:10:40'
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                key:
+                  type: string
+                  description: 'This field is required when <code>date</code> is present.'
+                  example: architecto
+                  nullable: true
+                date:
+                  type: string
+                  description: 'This field is required when <code>key</code> is present. Must be a valid date in the format <code>Y-m-d H:i:s</code>.'
+                  example: '2025-04-21 01:05:06'
+                  nullable: true
+      security: []

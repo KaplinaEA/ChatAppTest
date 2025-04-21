@@ -11,7 +11,7 @@ final class ChatController
     public function listByTime(CursorRequest $request, ChatService $chatService): ChatsCursorResource
     {
         $cursor = $request->toDto();
-        $list = $chatService->getlist($cursor)->load(['lastMessage']);
+        $list = $chatService->getlist($cursor);
         return ChatsCursorResource::make($list);
     }
 }
