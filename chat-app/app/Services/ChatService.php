@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Helpers\Dto\Request\CursorDto;
 use App\Repository\ChatRepository;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 
 final readonly class ChatService
 {

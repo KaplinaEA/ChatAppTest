@@ -16,7 +16,7 @@ class ChatRepository extends AbstractRepository
     public function list(CursorDto $cursorDto): Builder
     {
         $query = $this->newQuery();
-        $query->select(['id', 'name', 'created_at', 'updated_at']);
+        $query->select(['id', 'name', 'created_at', 'updated_at', 'last_message_id']);
         if (!is_null($cursorDto->date) && !is_null($cursorDto->key)) {
             $query->where('updated_at', '<', $cursorDto->date)
                 ->orWhere(function ($query) use ($cursorDto) {
@@ -24,7 +24,7 @@ class ChatRepository extends AbstractRepository
                         ->where('id', '<=', $cursorDto->key);
                 });
         }
-        $query->with(['lastMessage'])
+        $query->with(['lastMessage:id,text'])
             ->orderByDesc('updated_at')
             ->limit(CursorDto::LIMIT + 1);
         return $query;
